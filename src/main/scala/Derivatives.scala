@@ -24,6 +24,7 @@ object main {
   case class Right(v: Val) extends Val
   case class Stars(vs: List[Val]) extends Val
   case class Rec(x: String, v: Val) extends Val
+
   //case class Question(v: Val) extends Val
 
 
@@ -170,7 +171,7 @@ object main {
   def lexing2(r: Rexp, s: String): Boolean = lex2(r, s.toList)
   def lexing3(r: Rexp, s: String): Val = lex3(r, s.toList)
 
-  def main(args: Array[String]): Unit = {
+  def main2(args: Array[String]): Unit = {
     println("Derivatives")
 
     val K: Rexp = "a" | "b"
