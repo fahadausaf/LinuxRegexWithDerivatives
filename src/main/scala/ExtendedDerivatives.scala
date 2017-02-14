@@ -13,6 +13,7 @@ object ExtendedDerivatives {
   case class RECD(x: String, r: Rexp) extends Rexp
   case class QUESTION(r: Rexp) extends Rexp
   case class PLUS(r: Rexp) extends Rexp
+  case object ANY extends Rexp
 
   implicit def string2rexp(s: String): Rexp = charlist2rexp(s.toList)
 
@@ -41,29 +42,35 @@ object ExtendedDerivatives {
     case c :: s => SEQ(CHAR(c), charlist2rexp(s))
   }
 
+  val ASCI: Rexp =
+    "a"|"b"|"c"|"d"|"e"|"f"|"g"|"h"|"i"|"j"|"k"|"l"|"m"|"n"|"o"|"p"|"q"|"r"|"s"|"t"|"u"|"v"|"w"|"x"|"y"|"z"|
+    "A"|"B"|"C"|"D"|"E"|"F"|"G"|"H"|"I"|"J"|"K"|"L"|"M"|"N"|"O"|"P"|"Q"|"R"|"S"|"T"|"U"|"V"|"W"|"X"|"Y"|"Z"|
+    "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"
+  val any: Rexp = STAR(ALT(ONE,ASCI))
+
   def nullable(r: Rexp): Boolean = r match {
-    case ZERO => false
-    case ONE => true
-    case CHAR(_) => false
-    case ALT(r1, r2) => nullable(r1) || nullable(r2)
-    case SEQ(r1, r2) => nullable(r1) && nullable(r2)
-    case STAR(_) => true
-    //case QUESTION(_) => true
-    case RECD(_, r1) => nullable(r1)
+    case ZERO         => false
+    case ONE          => true
+    case CHAR(_)      => false
+    case ALT(r1, r2)  => nullable(r1) || nullable(r2)
+    case SEQ(r1, r2)  => nullable(r1) && nullable(r2)
+    case STAR(_)      => true
+    case RECD(_, r1)  => nullable(r1)
   }
 
   def der(c: Char, r: Rexp): Rexp = r match {
-    case ZERO => ZERO
-    case ONE => ZERO
-    case CHAR(d) => if (c == d) ONE else ZERO
-    case ALT(r1, r2) => ALT(der(c, r1), der(c, r2))
-    case SEQ(r1, r2) =>
+    case ZERO         => ZERO
+    case ONE          => ZERO
+    case CHAR(d)      => if (c == d) ONE else ZERO
+    case ALT(r1, r2)  => ALT(der(c, r1), der(c, r2))
+    case SEQ(r1, r2)  =>
       if (nullable(r1)) ALT(SEQ(der(c, r1), r2), der(c, r2))
       else SEQ(der(c, r1), r2)
-    case STAR(r) => SEQ(der(c, r), STAR(r))
-    case QUESTION(r) => der(c, ALT(ONE, r))
-    case PLUS(r) => der(c, SEQ(r, STAR(r)))
-    case RECD(_, r1) => der(c, r1)
+    case STAR(r)      => SEQ(der(c, r), STAR(r))
+    case RECD(_, r1)  => der(c, r1)
+    case QUESTION(r)  => der(c, ALT(ONE, r))
+    case PLUS(r)      => der(c, SEQ(r, STAR(r)))
+    case ANY          => der(c, any)
   }
 
   // derivative w.r.t. a string (iterates der)
@@ -91,7 +98,11 @@ object ExtendedDerivatives {
     val r2: Rexp = "b" | ONE
     val r3: Rexp = r1 ~ r2
     val r: Rexp = QUESTION(r3)
-    println(lexing(r, "ab"))
+    //println(lexing(r, "ab"))
+
+    val a: Rexp = ANY
+    println(lexing(a, "fahad"))
+
   }
 
 
