@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d53f9492-0470-4aa2-ba47-edeb833d184e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ExtendedDerivatives.scala" afterPath="$PROJECT_DIR$/src/main/scala/ExtendedDerivatives.scala" />
-    </list>
+    <list default="true" id="d53f9492-0470-4aa2-ba47-edeb833d184e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -92,8 +90,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="5807" />
-    <option name="y" value="52" />
+    <option name="x" value="1967" />
+    <option name="y" value="-1028" />
     <option name="width" value="937" />
     <option name="height" value="1028" />
   </component>
@@ -547,7 +545,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5807" y="52" width="937" height="1028" extended-state="4" />
+    <frame x="1967" y="-1028" width="937" height="1028" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
