@@ -14,7 +14,7 @@ object ExtendedDerivatives {
   case class QUESTION(r: Rexp) extends Rexp
   case class PLUS(r: Rexp) extends Rexp
   case object ANY extends Rexp
-  case class RANGE(c1: Char, c2: Char) extends Rexp
+  //case class RANGE(c1: Char, c2: Char) extends Rexp
 
   implicit def string2rexp(s: String): Rexp = charlist2rexp(s.toList)
 
@@ -79,9 +79,9 @@ object ExtendedDerivatives {
     case QUESTION(r)  => der(c, ALT(ONE, r))
     case PLUS(r)      => der(c, SEQ(r, STAR(r)))
     case ANY          => der(c, any)
-    case RANGE(CHAR(c1), CHAR(c2))  => {
+    /*case RANGE(CHAR(c1), CHAR(c2))  => {
       if(c>=c1 && c<=c2) ONE else ZERO
-    }
+    }*/
   }
 
   // derivative w.r.t. a string (iterates der)
@@ -97,7 +97,7 @@ object ExtendedDerivatives {
 
   def lexing(r: Rexp, s: String): Boolean = lex(r, s.toList)
 
-  def main(args: Array[String]): Unit = {
+  def main2(args: Array[String]): Unit = {
     println("Derivatives")
 
     val K: Rexp = "a" | "b"

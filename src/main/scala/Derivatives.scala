@@ -1,3 +1,5 @@
+import ExtendedDerivatives.{ALT, PLUS, QUESTION, SEQ, STAR}
+
 import scala.language.implicitConversions
 import scala.language.reflectiveCalls
 import scala.annotation.tailrec
@@ -24,6 +26,7 @@ object main {
   case class Right(v: Val) extends Val
   case class Stars(vs: List[Val]) extends Val
   case class Rec(x: String, v: Val) extends Val
+  case class Question(v: Val) extends Val
 
   //case class Question(v: Val) extends Val
 
@@ -80,23 +83,24 @@ object main {
     case ALT(r1, r2) => nullable(r1) || nullable(r2)
     case SEQ(r1, r2) => nullable(r1) && nullable(r2)
     case STAR(_) => true
-    //case QUESTION(_) => true
     case RECD(_, r1) => nullable(r1)
+    case QUESTION(_) => true
   }
 
   // derivative of a regular expression w.r.t. a character
   def der(c: Char, r: Rexp): Rexp = r match {
-    case ZERO => ZERO
-    case ONE => ZERO
-    case CHAR(d) => if (c == d) ONE else ZERO
+    case ZERO        => ZERO
+    case ONE         => ZERO
+    case CHAR(d)     => if (c == d) ONE else ZERO
     case ALT(r1, r2) => ALT(der(c, r1), der(c, r2))
     case SEQ(r1, r2) =>
       if (nullable(r1)) ALT(SEQ(der(c, r1), r2), der(c, r2))
       else SEQ(der(c, r1), r2)
-    case STAR(r) => SEQ(der(c, r), STAR(r))
+    case STAR(r)     => SEQ(der(c, r), STAR(r))
     case QUESTION(r) => der(c, ALT(ONE, r))
-    case PLUS(r) => der(c, SEQ(r, STAR(r)))
     case RECD(_, r1) => der(c, r1)
+    case QUESTION(r) => der(c, ALT(ONE, r))
+    case PLUS(r)     => der(c, SEQ(r, STAR(r)))
   }
 
   // derivative w.r.t. a string (iterates der)
@@ -146,20 +150,35 @@ object main {
     case (ALT(r1, r2), Right(v2)) => Right(inj(r2, c, v2))
     case (CHAR(d), Empty) => Chr(c)
     case (RECD(x, r1), _) => Rec(x, inj(r1, c, v))
+    case (QUESTION(r), Left(v1)) => Question(Empty)
+    case (QUESTION(r), Right(v2)) => Question(inj(r, c, v2))
+    case (_,_) =>{
+      println("Plus Case")
+      println("R: " + r)
+      println("C: " + c)
+      println("V: " + v)
+      Chr(c)
+    }
   }
 
   // main lexing function (produces a value)
-  def lex(r: Rexp, s: List[Char]): Val = s match {
+  def lex_(r: Rexp, s: List[Char]): Val = s match {
     case Nil => if (nullable(r)) mkeps(r) else throw new Exception("Not matched")
     case c :: cs => inj(r, c, lex(der(c, r), cs))
   }
 
-  def lex3(r: Rexp, s: List[Char]): Val = s match {
+  def lex(r: Rexp, s: List[Char]): Val = s match {
     case Nil => if (nullable(r)) {
       println(r)
+      println("Printed")
       mkeps(r)
     } else throw new Exception("Not matched")
-    case c :: cs => inj(r, c, lex3(der(c, r), cs))
+    case c :: cs => {
+      println("Injection")
+      println("CHAR: " + c)
+      println("REGEX: " + r)
+      inj(r, c, lex(der(c, r), cs))
+    }
   }
 
   def lex2(r: Rexp, s: List[Char]): Boolean = s match {
@@ -169,9 +188,8 @@ object main {
 
   def lexing(r: Rexp, s: String): Val = lex(r, s.toList)
   def lexing2(r: Rexp, s: String): Boolean = lex2(r, s.toList)
-  def lexing3(r: Rexp, s: String): Val = lex3(r, s.toList)
 
-  def main2(args: Array[String]): Unit = {
+  def main(args: Array[String]): Unit = {
     println("Derivatives")
 
     val K: Rexp = "a" | "b"
@@ -179,36 +197,13 @@ object main {
 
     //println(lexing((K | I).%, "abab"))
 
-    //val r1: Rexp = "a" | "ab"
-    //val r2: Rexp = "b" | ONE
-    //val r: Rexp  = STAR(r1 ~ r2)
-    //println(lexing3(r, "ab"))
-
     val r1: Rexp = "a" | "ab"
     val r2: Rexp = "b" | ONE
     val r3: Rexp = r1 ~ r2
-    //val r: Rexp = ONE | r3
     var r: Rexp = QUESTION(r3)
-    println(lexing3(r, "ab"))
 
-    //val Q: Rexp = "a"
-    //println(lexing2((Q).?, "v"))
-
-    /*
-    val K2: Rexp = ("key" $ "a" | "b")
-    val I2: Rexp = ("id" $ ("ab" | "ba"))
-
-    println(lexing((K2 | I2).%, "abaa"))
-    println(env(lexing((K2 | I2).%, "abaa")))
-
-    val r1: Rexp = "abc"
-    val r2: Rexp = der('a', r1)
-    val r3: Rexp = der('b', r2)
-    val r4: Rexp = der('c', r3)
-    println(r1)
-    println(r2)
-    println(r3)
-    println(r4)
-    */
+    //println(r)
+    //println("LEX")
+    println(lexing(r, "ab"))
   }
 }
