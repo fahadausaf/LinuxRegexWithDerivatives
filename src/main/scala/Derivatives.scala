@@ -1,4 +1,4 @@
-import ExtendedDerivatives.{ALT, PLUS, QUESTION, SEQ, STAR}
+//import ExtendedDerivatives.{ALT, PLUS, QUESTION, SEQ, STAR}
 
 import scala.language.implicitConversions
 import scala.language.reflectiveCalls
@@ -26,6 +26,7 @@ object main {
   case class Right(v: Val) extends Val
   case class Stars(vs: List[Val]) extends Val
   case class Rec(x: String, v: Val) extends Val
+  case class Pluss(vs: List[Val]) extends Val
   case class Question(v: Val) extends Val
 
   //case class Question(v: Val) extends Val
@@ -84,6 +85,7 @@ object main {
     case SEQ(r1, r2) => nullable(r1) && nullable(r2)
     case STAR(_) => true
     case RECD(_, r1) => nullable(r1)
+    case PLUS(r) => nullable(r)
     case QUESTION(_) => true
   }
 
@@ -97,10 +99,11 @@ object main {
       if (nullable(r1)) ALT(SEQ(der(c, r1), r2), der(c, r2))
       else SEQ(der(c, r1), r2)
     case STAR(r)     => SEQ(der(c, r), STAR(r))
-    case QUESTION(r) => der(c, ALT(ONE, r))
     case RECD(_, r1) => der(c, r1)
-    case QUESTION(r) => der(c, ALT(ONE, r))
+    //case PLUS(r)     => SEQ(der(c, r), PLUS(r))
     case PLUS(r)     => der(c, SEQ(r, STAR(r)))
+    //case PLUS(r)     => der(c, SEQ(r, PLUS(r)))
+    case QUESTION(r) => der(c, ALT(ONE, r))
   }
 
   // derivative w.r.t. a string (iterates der)
@@ -139,6 +142,8 @@ object main {
     case SEQ(r1, r2) => Sequ(mkeps(r1), mkeps(r2))
     case STAR(r) => Stars(Nil)
     case RECD(x, r) => Rec(x, mkeps(r))
+    //case PLUS(r) => mkeps(SEQ(r,STAR(r)))
+    case PLUS(r) => Pluss(mkeps(r)::Nil)
   }
 
   def inj(r: Rexp, c: Char, v: Val): Val = (r, v) match {
@@ -150,10 +155,13 @@ object main {
     case (ALT(r1, r2), Right(v2)) => Right(inj(r2, c, v2))
     case (CHAR(d), Empty) => Chr(c)
     case (RECD(x, r1), _) => Rec(x, inj(r1, c, v))
+    case (PLUS(r), Sequ(v1, Stars(vs))) => Pluss(inj(r, c, v1) :: vs)
+    case (PLUS(r), Left(Sequ(v1, Stars(vs)))) => Pluss(inj(r, c, v1) :: vs)
+    case (PLUS(r), Right(Stars(vs))) => Pluss(mkeps(r)::vs)
     case (QUESTION(r), Left(v1)) => Question(Empty)
     case (QUESTION(r), Right(v2)) => Question(inj(r, c, v2))
     case (_,_) =>{
-      println("Plus Case")
+      println("NONE")
       println("R: " + r)
       println("C: " + c)
       println("V: " + v)
@@ -170,14 +178,17 @@ object main {
   def lex(r: Rexp, s: List[Char]): Val = s match {
     case Nil => if (nullable(r)) {
       println(r)
-      println("Printed")
+      println("Take mkeps")
       mkeps(r)
     } else throw new Exception("Not matched")
     case c :: cs => {
       println("Injection")
       println("CHAR: " + c)
       println("REGEX: " + r)
-      inj(r, c, lex(der(c, r), cs))
+      val l = lex(der(c, r), cs)
+      println("LEX: " + l)
+      //inj(r, c, lex(der(c, r), cs))
+      inj(r, c, l)
     }
   }
 
@@ -192,6 +203,8 @@ object main {
   def main(args: Array[String]): Unit = {
     println("Derivatives")
 
+    /*
+
     val K: Rexp = "a" | "b"
     val I: Rexp = "ab" | "ba"
 
@@ -205,5 +218,11 @@ object main {
     //println(r)
     //println("LEX")
     println(lexing(r, "ab"))
+    */
+
+    val r1: Rexp = "a" | "b"
+    val r: Rexp = PLUS(r1)
+
+    println("result: " + lexing(r, "ab"))
   }
 }

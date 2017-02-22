@@ -2,49 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d53f9492-0470-4aa2-ba47-edeb833d184e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Question$.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Question.class" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ExtendedDerivatives$RANGE$.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ExtendedDerivatives$RANGE.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$PLUS$.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$PLUS.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Left.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ExtendedDerivatives$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ExtendedDerivatives$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/ExtendedDerivatives.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/ExtendedDerivatives.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$$anon$1.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$$anon$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$$anon$2.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$$anon$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$ALT$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$ALT$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$ALT.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$ALT.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$CHAR$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$CHAR$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$CHAR.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$CHAR.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Chr$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Chr$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Chr.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Chr.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Empty$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Empty$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Left$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Left$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$ONE$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$ONE$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Left.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Left.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$QUESTION$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$QUESTION$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$QUESTION.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$QUESTION.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$RECD$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$RECD$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$RECD.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$RECD.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Rec$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Rec$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Rec.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Rec.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Rexp.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Rexp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Right$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Right$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Right.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Right.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$SEQ$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$SEQ$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$SEQ.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$SEQ.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$STAR$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$STAR$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$STAR.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$STAR.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Sequ$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Sequ$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Sequ.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Sequ.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Stars$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Stars$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Stars.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Stars.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$Val.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$Val.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main$ZERO$.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main$ZERO$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.12/classes/main.class" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/Derivatives.scala" afterPath="$PROJECT_DIR$/src/main/scala/Derivatives.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ExtendedDerivatives.scala" afterPath="$PROJECT_DIR$/src/main/scala/ExtendedDerivatives.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,10 +74,29 @@
       <file leaf-file-name="ExtendedDerivatives.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ExtendedDerivatives.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="39" />
+            <state relative-caret-position="-12">
+              <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="48" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <marker date="1487768840367" expanded="true" signature="7:79" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="109:3521" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="702:817" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="706:817" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="857:1114" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="861:1114" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="1215:1327" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="1223:1327" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="1692:1754" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="1791:2072" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="1799:2072" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="2110:2710" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="2118:2710" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="2315:2400" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="2621:2706" ph="/.../" />
+                <marker date="1487768840367" expanded="true" signature="2802:2871" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="2810:2871" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="2918:3019" ph="..." />
+                <marker date="1487768840367" expanded="true" signature="2926:3019" ph="{...}" />
+                <marker date="1487768840367" expanded="true" signature="3124:3517" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -106,22 +105,10 @@
       <file leaf-file-name="Derivatives.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/Derivatives.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="102" column="21" lean-forward="false" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Object.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#63#104#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,6 +131,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="fahadausaf &lt;fahad.ausaf@icloud.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -162,10 +154,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
-    <option name="y" value="52" />
-    <option name="width" value="1863" />
-    <option name="height" value="1028" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="2182" />
+    <option name="height" value="1402" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -182,9 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,38 +199,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinuxRegexWithDerivatives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinuxRegexWithDerivatives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinuxRegexWithDerivatives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinuxRegexWithDerivatives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -249,36 +206,13 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="scala" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinuxRegexWithDerivatives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LinuxRegexWithDerivatives" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Derivatives.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -612,61 +546,70 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="52" width="1863" height="1028" extended-state="4" />
+    <frame x="-11" y="-11" width="2182" height="1402" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33978495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33899677" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296643" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36543754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21203704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3311828" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33090615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296643" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/Derivatives.scala</url>
-          <line>134</line>
+          <line>87</line>
           <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
           <url>file://$PROJECT_DIR$/src/main/scala/Derivatives.scala</url>
-          <line>173</line>
+          <line>190</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/Derivatives.scala</url>
+          <line>225</line>
+          <properties />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -681,10 +624,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/scala/ExtendedDerivatives.scala">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <marker date="1487768840367" expanded="true" signature="7:79" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="109:3521" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="702:817" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="706:817" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="857:1114" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="861:1114" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1215:1327" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="1223:1327" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1692:1754" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1791:2072" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="1799:2072" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2110:2710" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2118:2710" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2315:2400" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2621:2706" ph="/.../" />
+            <marker date="1487768840367" expanded="true" signature="2802:2871" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2810:2871" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2918:3019" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2926:3019" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="3124:3517" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Derivatives.scala">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#63#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -694,7 +666,55 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1487768840367" expanded="true" signature="7:79" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="109:3521" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="702:817" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="706:817" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="857:1114" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="861:1114" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1215:1327" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="1223:1327" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1692:1754" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1791:2072" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="1799:2072" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2110:2710" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2118:2710" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2315:2400" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2621:2706" ph="/.../" />
+            <marker date="1487768840367" expanded="true" signature="2802:2871" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2810:2871" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2918:3019" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2926:3019" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="3124:3517" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ExtendedDerivatives.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1487768840367" expanded="true" signature="7:79" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="109:3521" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="702:817" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="706:817" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="857:1114" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="861:1114" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1215:1327" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="1223:1327" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1692:1754" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1791:2072" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="1799:2072" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2110:2710" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2118:2710" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2315:2400" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2621:2706" ph="/.../" />
+            <marker date="1487768840367" expanded="true" signature="2802:2871" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2810:2871" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2918:3019" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2926:3019" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="3124:3517" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -702,32 +722,42 @@
     <entry file="file://$PROJECT_DIR$/src/main/test.sc" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/Derivatives2.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/DerivativesRegexLexer.scala" />
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#383#384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/ExtendedDerivatives.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="39" />
+        <state relative-caret-position="-12">
+          <caret line="79" column="48" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="48" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <marker date="1487768840367" expanded="true" signature="7:79" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="109:3521" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="702:817" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="706:817" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="857:1114" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="861:1114" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1215:1327" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="1223:1327" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1692:1754" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="1791:2072" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="1799:2072" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2110:2710" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2118:2710" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2315:2400" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2621:2706" ph="/.../" />
+            <marker date="1487768840367" expanded="true" signature="2802:2871" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2810:2871" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="2918:3019" ph="..." />
+            <marker date="1487768840367" expanded="true" signature="2926:3019" ph="{...}" />
+            <marker date="1487768840367" expanded="true" signature="3124:3517" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/Derivatives.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="102" column="21" lean-forward="false" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#63#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
