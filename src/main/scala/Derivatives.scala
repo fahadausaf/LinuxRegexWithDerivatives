@@ -17,6 +17,9 @@ object main {
   case class RECD(x: String, r: Rexp) extends Rexp
   case class QUESTION(r: Rexp) extends Rexp
   case class PLUS(r: Rexp) extends Rexp
+  case class NTIME(r: Rexp, n: Int) extends Rexp
+  case class UPNTIME(r: Rexp, n: Int) extends Rexp
+
 
   abstract class Val
   case object Empty extends Val
@@ -27,7 +30,7 @@ object main {
   case class Stars(vs: List[Val]) extends Val
   case class Rec(x: String, v: Val) extends Val
   case class Pluss(vs: List[Val]) extends Val
-  case class Question(v: Val) extends Val
+  case class Questionn(v: Val) extends Val
 
   //case class Question(v: Val) extends Val
 
@@ -87,6 +90,8 @@ object main {
     case RECD(_, r1) => nullable(r1)
     case PLUS(r) => nullable(r)
     case QUESTION(_) => true
+    case UPNTIME(_, _) => true
+    case NTIME(r, n) => if (n==0) true else nullable(r)
   }
 
   // derivative of a regular expression w.r.t. a character
@@ -100,10 +105,12 @@ object main {
       else SEQ(der(c, r1), r2)
     case STAR(r)     => SEQ(der(c, r), STAR(r))
     case RECD(_, r1) => der(c, r1)
-    //case PLUS(r)     => SEQ(der(c, r), PLUS(r))
     case PLUS(r)     => der(c, SEQ(r, STAR(r)))
-    //case PLUS(r)     => der(c, SEQ(r, PLUS(r)))
     case QUESTION(r) => der(c, ALT(ONE, r))
+    case NTIME(_, 0) => ZERO
+    case NTIME(r, n) => SEQ(der(c, r), NTIME(r, n-1))
+    case UPNTIME(_, 0) => ZERO
+    case UPNTIME(r, n) => SEQ(der(c, r), UPNTIME(r, n-1))
   }
 
   // derivative w.r.t. a string (iterates der)
@@ -142,8 +149,9 @@ object main {
     case SEQ(r1, r2) => Sequ(mkeps(r1), mkeps(r2))
     case STAR(r) => Stars(Nil)
     case RECD(x, r) => Rec(x, mkeps(r))
-    //case PLUS(r) => mkeps(SEQ(r,STAR(r)))
     case PLUS(r) => Pluss(mkeps(r)::Nil)
+    case NTIMES(r, n) => Stars(List.fill(n)(mkeps(r)))
+    case UPNTIMES(r, n) => Stars(Nil)
   }
 
   def inj(r: Rexp, c: Char, v: Val): Val = (r, v) match {
@@ -158,8 +166,10 @@ object main {
     case (PLUS(r), Sequ(v1, Stars(vs))) => Pluss(inj(r, c, v1) :: vs)
     case (PLUS(r), Left(Sequ(v1, Stars(vs)))) => Pluss(inj(r, c, v1) :: vs)
     case (PLUS(r), Right(Stars(vs))) => Pluss(mkeps(r)::vs)
-    case (QUESTION(r), Left(v1)) => Question(Empty)
-    case (QUESTION(r), Right(v2)) => Question(inj(r, c, v2))
+    case (QUESTION(r), Left(v1)) => Questionn(Empty)
+    case (QUESTION(r), Right(v2)) => Questionn(inj(r, c, v2))
+    case (NTIMES(r, n), )
+
     case (_,_) =>{
       println("NONE")
       println("R: " + r)
@@ -168,6 +178,11 @@ object main {
       Chr(c)
     }
   }
+
+  /*
+  | "injval (UPNTIMES r n) c (Seq v (Stars vs)) = Stars ((injval r c v) # vs)"
+  | "injval (NTIMES r n) c (Seq v (Stars vs)) = Stars ((injval r c v) # vs)"
+  * */
 
   // main lexing function (produces a value)
   def lex_(r: Rexp, s: List[Char]): Val = s match {
