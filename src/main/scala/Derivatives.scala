@@ -31,6 +31,7 @@ object main {
   case class Rec(x: String, v: Val) extends Val
   case class Pluss(vs: List[Val]) extends Val
   case class Questionn(v: Val) extends Val
+  case class Ntimes(vs: List[Val]) extends Val
 
   //case class Question(v: Val) extends Val
 
@@ -150,8 +151,8 @@ object main {
     case STAR(r) => Stars(Nil)
     case RECD(x, r) => Rec(x, mkeps(r))
     case PLUS(r) => Pluss(mkeps(r)::Nil)
-    case NTIMES(r, n) => Stars(List.fill(n)(mkeps(r)))
-    case UPNTIMES(r, n) => Stars(Nil)
+    case NTIME(r, n) => Stars(List.fill(n)(mkeps(r)))
+    case UPNTIME(r, n) => Stars(Nil)
   }
 
   def inj(r: Rexp, c: Char, v: Val): Val = (r, v) match {
@@ -168,8 +169,7 @@ object main {
     case (PLUS(r), Right(Stars(vs))) => Pluss(mkeps(r)::vs)
     case (QUESTION(r), Left(v1)) => Questionn(Empty)
     case (QUESTION(r), Right(v2)) => Questionn(inj(r, c, v2))
-    case (NTIMES(r, n), )
-
+    case (NTIME(r, n), Sequ(v1, Stars(vs))) => Ntimes(inj(r, c, v1) :: vs)
     case (_,_) =>{
       println("NONE")
       println("R: " + r)
